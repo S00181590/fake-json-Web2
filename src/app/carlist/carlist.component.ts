@@ -18,4 +18,8 @@ export class CarlistComponent implements OnInit {
     this._carAPIService.getCarData().subscribe(carsData => {this.carsData = carsData});
   }
 
+  addCar(evt){
+    this.carsData.push(evt);
+  }
+
 }
